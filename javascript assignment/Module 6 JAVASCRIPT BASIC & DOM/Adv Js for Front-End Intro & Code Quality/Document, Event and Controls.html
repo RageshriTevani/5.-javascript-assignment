@@ -1,0 +1,76 @@
+<!-- ● Create a program to hide/show the password -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <label for="password">Password:</label>
+<input type="password" id="password" value="Hey">
+<button id="toggle">Show Password</button>
+
+<script>
+    const passwordInput = document.getElementById('password');
+
+    const toggleButton = document.getElementById('toggle');
+
+toggleButton.addEventListener('click', () => {
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleButton.textContent = 'Hide Password';
+    } else {
+        passwordInput.type = 'password';
+        toggleButton.textContent = 'Show Password';
+    }
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+<!-- ● Create a program that will select all the classes and loop over and whenever i click the button the alert should show -->
+
+<div class="myClass">Element 1</div>
+<div class="myClass">Element 2</div>
+<div class="myClass">Element 3</div>
+<button id="alertButton">Alert Elements</button>
+<script>
+const alertButton = document.getElementById('alertButton');
+const elements = document.querySelectorAll('.myClass');
+
+alertButton.addEventListener('click', () => {
+    elements.forEach((element) => {
+        alert(element.textContent);
+    });
+});
+</script>
+
+
+
+
+<!-- ● Create a responsive header using proper JavaScript -->
+
+
+
+<!-- ● Create a form and validate using JavaScript -->
+
+
+
+<!-- ● Create a modal box using css and Js with three buttons -->
+
+
+<!-- ● Use external js library to show slider -->
+
+
+
+
+<!-- ● Prevent the browser when i click the form submit button -->
